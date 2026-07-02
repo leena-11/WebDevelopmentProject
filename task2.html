@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Event Registration</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f3;
+        }
+
+        header {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #9b59b6;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section,
+        article,
+        aside {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+            box-sizing: border-box;
+        }
+
+        .inline {
+            width: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th {
+            background: #9b59b6;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+        }
+
+        ul,
+        ol {
+            margin-left: 30px;
+        }
+
+        hr {
+            margin: 30px 0;
+        }
+
+        figure {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        figure img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Event Registration</h1>
+        <p>Welcome to Tech Fest 2026</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Schedule</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Event Registration Form</h2>
+
+            <form>
+
+                <label>Participant Name</label>
+                <input type="text" required>
+
+                <label>Email</label>
+                <input type="email" required>
+
+                <label>Password</label>
+                <input type="password" required pattern="[A-Z]{2}[a-z]{8}[0-9]{2}[^A-Za-z0-9]{1}"
+                    title="Password must contain exactly 2 capital letters, 8 small letters, 2 numbers and 1 symbol">
+
+                <label>Date of Birth</label>
+                <input type="date">
+
+                <label>Age</label>
+                <input type="number">
+
+                <label>Gender</label><br>
+
+                <input type="radio" name="gender" class="inline">
+                Male
+
+                <input type="radio" name="gender" class="inline">
+                Female
+
+                <br><br>
+
+                <label>Events Interested</label><br>
+
+                <input type="checkbox" class="inline">
+                Coding
+
+                <input type="checkbox" class="inline">
+                Robotics
+
+                <input type="checkbox" class="inline">
+                Quiz
+
+                <br><br>
+
+                <label>Category</label>
+
+                <select>
+                    <option>Select Category</option>
+                    <option>Student</option>
+                    <option>Faculty</option>
+                    <option>Guest</option>
+                </select>
+
+                <label>Comments</label>
+
+                <textarea rows="4"></textarea>
+
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+        <aside>
+            <h2>Password Rules</h2>
+
+            <ul>
+                <li>2 Capital Letters (A-Z)</li>
+                <li>8 Small Letters (a-z)</li>
+                <li>2 Numbers (0-9)</li>
+                <li>1 Symbol (@, #, $, %, etc.)</li>
+            </ul>
+
+            <p>
+                <strong>Example Password:</strong>
+                ABabcdefgh12@
+            </p>
+        </aside>
+
+        <article>
+            <h2>Event Highlights</h2>
+
+            <ol>
+                <li>Coding Competition</li>
+                <li>Technical Quiz</li>
+                <li>Project Exhibition</li>
+            </ol>
+        </article>
+
+        <section>
+            <h2>Event Schedule</h2>
+
+            <table>
+
+                <tr>
+                    <th>Event</th>
+                    <th>Time</th>
+                </tr>
+
+                <tr>
+                    <td>Coding</td>
+                    <td>10:00 AM</td>
+                </tr>
+
+                <tr>
+                    <td>Quiz</td>
+                    <td>1:00 PM</td>
+                </tr>
+
+                <tr>
+                    <td>Robotics</td>
+                    <td>3:00 PM</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <hr>
+
+        <h3>Unordered List</h3>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+
+        <ol>
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn JavaScript</li>
+        </ol>
+
+        <figure>
+            <img src="https://picsum.photos/250" alt="Sample Image">
+
+            <figcaption>Sample Figure Image</figcaption>
+        </figure>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tech Fest Registration</p>
+        <p>Email: events@example.com</p>
+    </footer>
+
+</body>
+
+</html>
